@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Outfit:wght@400;700&display=swap');
+
+body {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  $radius:25px;
+  $White: hsl(0, 0%, 100%);
+  $Light-gray: hsl(212, 45%, 89%);
+  $Grayish-blue: hsl(220, 15%, 55%);
+  $Dark-blue: hsl(218, 44%, 22%);
+
+
+.card {
+  padding: 15px;
+  background: $White;
+  text-align: center;
+  width: 300px;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .upper-side {
+    img {
+      max-width: 100%;
+      border-radius: $radius;
+    }
+  }
+
+  .bottom-side {
+    h3 {
+      font-family:  'Outfit', sans-serif;
+    }
+    
+    h4{
+      font-family:  'Outfit', sans-serif;
+      color: $Grayish-blue;
+    }
+  }
+}
